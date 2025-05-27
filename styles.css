@@ -73,22 +73,45 @@
 }
 
 @layer base {
-:root {
-  --clr-white: hsl(0, 0%, 100%);
-  --clr-gray-100: hsl(0, 2%, 79%);
-  --clr-brand-400: hsl(25, 88%, 75%);
-  --clr-brand-500: hsl(25, 88%, 66%);
-  --clr-green-400: hsl(143, 19%, 49%);
-  --clr-green-500: hsl(143, 38%, 37%);
-  --clr-green-600: hsl(145, 29%, 19%);
-  --clr-brown-500: hsl(10, 5%, 25%);
-  --clr-brown-600: hsl(9, 7%, 21%);
-  --clr-brown-700: hsl(9, 8%, 16%);
-  --clr-brown-800: hsl(0, 6%, 15%);
-  --clr-brown-900: hsl(0, 6%, 13%);
+  :root {
+    /* --- colors --- */
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-gray-100: hsl(0, 2%, 79%);
+    --clr-brand-400: hsl(25, 88%, 75%);
+    --clr-brand-500: hsl(25, 88%, 66%);
+    --clr-green-400: hsl(143, 19%, 49%);
+    --clr-green-500: hsl(143, 38%, 37%);
+    --clr-green-600: hsl(145, 29%, 19%);
+    --clr-brown-500: hsl(10, 5%, 25%);
+    --clr-brown-600: hsl(9, 7%, 21%);
+    --clr-brown-700: hsl(9, 8%, 16%);
+    --clr-brown-800: hsl(0, 6%, 15%);
+    --clr-brown-900: hsl(0, 6%, 13%);
 
-  --clr-orange-500: hsl(28, 43%, 28%);
-  --clr-red-500: hsl(359, 34%, 24%);
-  --clr-teal-500: hsl(186, 42%, 25%);
-}
+    --clr-orange-500: hsl(28, 43%, 28%);
+    --clr-red-500: hsl(359, 34%, 24%);
+    --clr-teal-500: hsl(186, 42%, 25%);
+
+    /* --- fonts --- */
+    --ff-heading: "Outfit", sans-serif;
+    --ff-body: "Fira Sans", sans-serif;
+
+    --fs-300: 0.875rem;
+    --fs-400: 1rem;
+    --fs-500: 1.125rem;
+    --fs-600: 1.25rem;
+    --fs-700: 1.5rem;
+    --fs-800: 2rem;
+    --fs-900: 3.75rem;
+    --fs-1000: 3.75rem;
+
+    @media (width > 760px) {
+      --fs-500: 1.25rem;
+      --fs-600: 1.5rem;
+      --fs-700: 2rem;
+      --fs-800: 3rem;
+      --fs-900: 5rem;
+      --fs-1000: 7.5rem;
+    }
+  }
 }
