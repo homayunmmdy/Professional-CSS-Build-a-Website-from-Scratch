@@ -175,7 +175,20 @@
 
   a:hover,
   a:focus-visible {
-    color:var(--text-brand-light) ;
+    color: var(--text-brand-light);
+  }
+}
+
+@layer layout {
+  .wrapper {
+    max-width: 1130px;
+    margin-inline: auto;
+    padding-inline: 1rem;
+    box-sizing: content-box;
+
+    &[data-width="wide"] {
+      max-width: 1330px;
+    }
   }
 }
 
