@@ -184,6 +184,15 @@
 }
 
 @layer layout {
+  .flow > * + * {
+    margin-top: var(--flow-space, 1em);
+  }
+
+  .grid-flow {
+    display: grid;
+    gap: var(--grid-flow-gap, 1rem);
+  }
+
   .equal-columns {
     display: grid;
     gap: var(--equal-columns-gap, 1rem);
