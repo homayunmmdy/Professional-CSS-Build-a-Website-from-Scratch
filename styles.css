@@ -260,6 +260,30 @@
       gap: 0.5rem 1rem;
     }
   }
+
+  .site-footer {
+    text-align: center;
+    background-color: var(--background-dark);
+    padding-block: 2rem;
+    display: grid;
+    gap: 2rem;
+
+    a {
+      color: var(--text-main);
+    }
+
+    a:hover ,
+    a:focus-visible {
+      color: var(--text-high-contrast);
+    }
+  }
+
+  .site-footer__title {
+    font-size: var(--font-size-lg);
+    font-family: var(--ff-heading);
+    font-weight: 700;
+  }
+
   .hero {
     text-align: center;
     font-size: var(--font-size-md);
@@ -291,7 +315,7 @@
   }
 
   .card__title {
-    font-size: var(--card-title-font-size, var(--font-size-heading-regular));
+    font-size: var(--card-title-font-size, var(--font-size-heading-sm));
     color: var(--card-title-color, var(--text-brand));
   }
 
@@ -306,7 +330,7 @@
     font-weight: 700;
     border-radius: var(--border-radius-2);
   }
-  
+
   .button:hover,
   .button:focus-visible {
     color: var(--text-high-contrast);
