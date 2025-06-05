@@ -7,10 +7,10 @@ const currentFilters = {
   edible: "all",
 };
 
-seasonalFilter.addEventListener('change', (event) => {
-    currentFilters.season = event.target.value;
-})
+seasonalFilter.addEventListener("change", updateFilter);
+edibleFilter.addEventListener("change", updateFilter);
 
-edibleFilter.addEventListener('change', (event) => {
-    currentFilters.edible = event.target.value;
-})
+function updateFilter(e) {
+  const filterType = e.target;
+  currentFilters[filterType] = e.target.value;
+}
