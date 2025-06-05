@@ -604,8 +604,3 @@
     font-size: var(--font-size-lg);
   }
 }
-
-.mushroom-guide:has(#season [value="spring"]:checked)
-  .card:not(:has([data-season="spring"])) {
-  display: none;
-}
