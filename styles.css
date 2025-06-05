@@ -197,13 +197,13 @@
     gap: var(--grid-flow-gap, 1rem);
   }
 
-  .grid-auto-fit {
+  .grid-auto-fill {
     --auto-fit-main-col-size: 250px;
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(
       auto-fit,
-      minmax(min(--auto-fit-main-col-size), 1fr)
+      minmax(min(var(--auto-fit-main-col-size)), 1fr)
     );
   }
 
@@ -391,7 +391,8 @@
   }
 
   .card {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: var(--card-gap, 1rem);
     padding: 1rem;
     background-color: var(--background-light);
@@ -408,6 +409,7 @@
   }
 
   .card__note {
+    margin-block-start: auto;
     background-color: var(--background-extra-light);
     padding: .75rem;
     border-radius: var(--border-radius-2);
