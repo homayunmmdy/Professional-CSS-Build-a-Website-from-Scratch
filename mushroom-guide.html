@@ -89,318 +89,323 @@
 
       <section class="mushroom-guide section">
         <div class="wrapper">
-          <h2 class="section-title">Get to know your mushrooms</h2>
-          <select>
-            <option value="all">Season: All</option>
-            <option value="spring">Spring</option>
-            <option value="summer">Summer</option>
-            <option value="fall">Fall</option>
-            <option value="winter">Winter</option>
-          </select>
-          <select>
-            <option value="all">Type : All</option>
-            <option value="edible">Edible</option>
-            <option value="toxic">Toxic</option>
-          </select>
-
-          <!-- grid of mushrooms -->
-          <div class="grid-auto-fill">
-            <div class="card" hidden>
-              <h3 class="card__title">Chanterelle</h3>
-              <ul
-                class="tag-list"
-                role="list"
-                aria-label="Mushroom Characteristic"
-              >
-                <li data-edible="edible">
-                  <span class="visually-hidden"> This mushroom is </span>
-                  edible
-                </li>
-                <li data-season="summer">
-                  <span class="visually-hidden">
-                    Best season to harvest this mushroom is
-                  </span>
-                  summer
-                </li>
-              </ul>
-              <p>Golden-yellow, funnel-shaped mushroom with false gills</p>
-              <div class="card__note">
-                <strong>Important notes: </strong>
-                Has toxic look-alikes - learn proper identification
-              </div>
+          <div class="flow">
+            <h2 class="section-title">Get to know your mushrooms</h2>
+            <div class="flex-group">
+              <select>
+                <option value="all">Season: All</option>
+                <option value="spring">Spring</option>
+                <option value="summer">Summer</option>
+                <option value="fall">Fall</option>
+                <option value="winter">Winter</option>
+              </select>
+              <select>
+                <option value="all">Type : All</option>
+                <option value="edible">Edible</option>
+                <option value="toxic">Toxic</option>
+              </select>
             </div>
-            <div class="card">
-              <h3 class="card__title">Morel</h3>
-              <ul
-                class="tag-list"
-                role="list"
-                aria-label="Mushroom Characteristic"
-              >
-                <li data-edible="toxic">
-                  <span class="visually-hidden"> This mushroom is </span>
-                  toxic
-                </li>
-                <li data-season="spring">
-                  <span class="visually-hidden">
-                    Best season to harvest this mushroom is
-                  </span>
-                  spring
-                </li>
-              </ul>
-              <p>Distinctive honeycomb-like cap structure</p>
-              <div class="card__note">
-                <strong>Important notes: </strong>
-                Must be cooked before eating
+            <!-- grid of mushrooms -->
+            <div class="grid-auto-fill">
+              <div class="card" hidden>
+                <h3 class="card__title">Chanterelle</h3>
+                <ul
+                  class="tag-list"
+                  role="list"
+                  aria-label="Mushroom Characteristic"
+                >
+                  <li data-edible="edible">
+                    <span class="visually-hidden"> This mushroom is </span>
+                    edible
+                  </li>
+                  <li data-season="summer">
+                    <span class="visually-hidden">
+                      Best season to harvest this mushroom is
+                    </span>
+                    summer
+                  </li>
+                </ul>
+                <p>Golden-yellow, funnel-shaped mushroom with false gills</p>
+                <div class="card__note">
+                  <strong>Important notes: </strong>
+                  Has toxic look-alikes - learn proper identification
+                </div>
               </div>
-            </div>
-
-            <div class="card">
-              <h3 class="card__title">Chicken of the Woods</h3>
-              <ul
-                class="tag-list"
-                role="list"
-                aria-label="Mushroom Characteristic"
-              >
-                <li data-edible="edible">
-                  <span class="visually-hidden"> This mushroom is </span>
-                  edible
-                </li>
-                <li data-season="summer">
-                  <span class="visually-hidden">
-                    Best season to harvest this mushroom is
-                  </span>
-                  summer
-                </li>
-              </ul>
-              <p>Bright orange bracket fungus with yellow edges</p>
-              <div class="card__note">
-                <strong>Important notes: </strong>
-                Avoid if growing on certain tree species
+              <div class="card">
+                <h3 class="card__title">Morel</h3>
+                <ul
+                  class="tag-list"
+                  role="list"
+                  aria-label="Mushroom Characteristic"
+                >
+                  <li data-edible="toxic">
+                    <span class="visually-hidden"> This mushroom is </span>
+                    toxic
+                  </li>
+                  <li data-season="spring">
+                    <span class="visually-hidden">
+                      Best season to harvest this mushroom is
+                    </span>
+                    spring
+                  </li>
+                </ul>
+                <p>Distinctive honeycomb-like cap structure</p>
+                <div class="card__note">
+                  <strong>Important notes: </strong>
+                  Must be cooked before eating
+                </div>
               </div>
-            </div>
 
-            <div class="card">
-              <h3 class="card__title">Death Cap</h3>
-              <ul
-                class="tag-list"
-                role="list"
-                aria-label="Mushroom Characteristic"
-              >
-                <li data-edible="toxic">
-                  <span class="visually-hidden"> This mushroom is </span>
-                  toxic
-                </li>
-                <li data-season="summer">
-                  <span class="visually-hidden">
-                    Best season to harvest this mushroom is
-                  </span>
-                  summer
-                </li>
-              </ul>
-              <p>Pale green to white cap with white gills</p>
-              <div class="card__note">
-                <strong>Important notes: </strong>
-                Extremely toxic - study for safety awareness
+              <div class="card">
+                <h3 class="card__title">Chicken of the Woods</h3>
+                <ul
+                  class="tag-list"
+                  role="list"
+                  aria-label="Mushroom Characteristic"
+                >
+                  <li data-edible="edible">
+                    <span class="visually-hidden"> This mushroom is </span>
+                    edible
+                  </li>
+                  <li data-season="summer">
+                    <span class="visually-hidden">
+                      Best season to harvest this mushroom is
+                    </span>
+                    summer
+                  </li>
+                </ul>
+                <p>Bright orange bracket fungus with yellow edges</p>
+                <div class="card__note">
+                  <strong>Important notes: </strong>
+                  Avoid if growing on certain tree species
+                </div>
               </div>
-            </div>
 
-            <div class="card">
-              <h3 class="card__title">Oyster Mushroom</h3>
-              <ul
-                class="tag-list"
-                role="list"
-                aria-label="Mushroom Characteristic"
-              >
-                <li data-edible="toxic">
-                  <span class="visually-hidden"> This mushroom is </span>
-                  toxic
-                </li>
-                <li data-season="fall">
-                  <span class="visually-hidden">
-                    Best season to harvest this mushroom is
-                  </span>
-                  fall
-                </li>
-              </ul>
-              <p>Fan-shaped caps growing in clusters</p>
-              <div class="card__note">
-                <strong>Important notes: </strong>
-                Great beginner mushroom, few look-alikes
+              <div class="card">
+                <h3 class="card__title">Death Cap</h3>
+                <ul
+                  class="tag-list"
+                  role="list"
+                  aria-label="Mushroom Characteristic"
+                >
+                  <li data-edible="toxic">
+                    <span class="visually-hidden"> This mushroom is </span>
+                    toxic
+                  </li>
+                  <li data-season="summer">
+                    <span class="visually-hidden">
+                      Best season to harvest this mushroom is
+                    </span>
+                    summer
+                  </li>
+                </ul>
+                <p>Pale green to white cap with white gills</p>
+                <div class="card__note">
+                  <strong>Important notes: </strong>
+                  Extremely toxic - study for safety awareness
+                </div>
               </div>
-            </div>
 
-            <div class="card">
-              <h3 class="card__title">Lion’s Mane</h3>
-              <ul
-                class="tag-list"
-                role="list"
-                aria-label="Mushroom Characteristic"
-              >
-                <li data-edible="edible">
-                  <span class="visually-hidden"> This mushroom is </span>
-                  edible
-                </li>
-                <li data-season="fall">
-                  <span class="visually-hidden">
-                    Best season to harvest this mushroom is
-                  </span>
-                  fall
-                </li>
-              </ul>
-              <p>White, shaggy appearance like a lion's mane</p>
-              <div class="card__note">
-                <strong>Important notes: </strong>
-                No toxic look-alikes
+              <div class="card">
+                <h3 class="card__title">Oyster Mushroom</h3>
+                <ul
+                  class="tag-list"
+                  role="list"
+                  aria-label="Mushroom Characteristic"
+                >
+                  <li data-edible="toxic">
+                    <span class="visually-hidden"> This mushroom is </span>
+                    toxic
+                  </li>
+                  <li data-season="fall">
+                    <span class="visually-hidden">
+                      Best season to harvest this mushroom is
+                    </span>
+                    fall
+                  </li>
+                </ul>
+                <p>Fan-shaped caps growing in clusters</p>
+                <div class="card__note">
+                  <strong>Important notes: </strong>
+                  Great beginner mushroom, few look-alikes
+                </div>
               </div>
-            </div>
 
-            <div class="card">
-              <h3 class="card__title">Destroying Angel</h3>
-              <ul
-                class="tag-list"
-                role="list"
-                aria-label="Mushroom Characteristic"
-              >
-                <li data-edible="toxic">
-                  <span class="visually-hidden"> This mushroom is </span>
-                  toxic
-                </li>
-                <li data-season="fall">
-                  <span class="visually-hidden">
-                    Best season to harvest this mushroom is
-                  </span>
-                  fall
-                </li>
-              </ul>
-              <p>Pure white mushroom with a sack-like base</p>
-              <div class="card__note">
-                <strong>Important notes: </strong>
-                Deadly toxic - study for safety awareness
+              <div class="card">
+                <h3 class="card__title">Lion’s Mane</h3>
+                <ul
+                  class="tag-list"
+                  role="list"
+                  aria-label="Mushroom Characteristic"
+                >
+                  <li data-edible="edible">
+                    <span class="visually-hidden"> This mushroom is </span>
+                    edible
+                  </li>
+                  <li data-season="fall">
+                    <span class="visually-hidden">
+                      Best season to harvest this mushroom is
+                    </span>
+                    fall
+                  </li>
+                </ul>
+                <p>White, shaggy appearance like a lion's mane</p>
+                <div class="card__note">
+                  <strong>Important notes: </strong>
+                  No toxic look-alikes
+                </div>
               </div>
-            </div>
 
-            <div class="card">
-              <h3 class="card__title">King Bolete</h3>
-              <ul
-                class="tag-list"
-                role="list"
-                aria-label="Mushroom Characteristic"
-              >
-                <li data-edible="edible">
-                  <span class="visually-hidden"> This mushroom is </span>
-                  edible
-                </li>
-                <li data-season="summer">
-                  <span class="visually-hidden">
-                    Best season to harvest this mushroom is
-                  </span>
-                  summer
-                </li>
-              </ul>
-              <p>Large brown cap with thick stem</p>
-              <div class="card__note">
-                <strong>Important notes: </strong>
-                earn to distinguish from similar species
+              <div class="card">
+                <h3 class="card__title">Destroying Angel</h3>
+                <ul
+                  class="tag-list"
+                  role="list"
+                  aria-label="Mushroom Characteristic"
+                >
+                  <li data-edible="toxic">
+                    <span class="visually-hidden"> This mushroom is </span>
+                    toxic
+                  </li>
+                  <li data-season="fall">
+                    <span class="visually-hidden">
+                      Best season to harvest this mushroom is
+                    </span>
+                    fall
+                  </li>
+                </ul>
+                <p>Pure white mushroom with a sack-like base</p>
+                <div class="card__note">
+                  <strong>Important notes: </strong>
+                  Deadly toxic - study for safety awareness
+                </div>
               </div>
-            </div>
 
-            <div class="card">
-              <h3 class="card__title">Shaggy Mane</h3>
-              <ul
-                class="tag-list"
-                role="list"
-                aria-label="Mushroom Characteristic"
-              >
-                <li data-edible="edible">
-                  <span class="visually-hidden"> This mushroom is </span>
-                  edible
-                </li>
-                <li data-season="fall">
-                  <span class="visually-hidden">
-                    Best season to harvest this mushroom is
-                  </span>
-                  fall
-                </li>
-              </ul>
-              <p>Tall white mushroom with shaggy scales</p>
-              <div class="card__note">
-                <strong>Important notes: </strong>
-                Must be harvested and eaten quickly
+              <div class="card">
+                <h3 class="card__title">King Bolete</h3>
+                <ul
+                  class="tag-list"
+                  role="list"
+                  aria-label="Mushroom Characteristic"
+                >
+                  <li data-edible="edible">
+                    <span class="visually-hidden"> This mushroom is </span>
+                    edible
+                  </li>
+                  <li data-season="summer">
+                    <span class="visually-hidden">
+                      Best season to harvest this mushroom is
+                    </span>
+                    summer
+                  </li>
+                </ul>
+                <p>Large brown cap with thick stem</p>
+                <div class="card__note">
+                  <strong>Important notes: </strong>
+                  earn to distinguish from similar species
+                </div>
               </div>
-            </div>
 
-            <div class="card">
-              <h3 class="card__title">Maitake</h3>
-              <ul
-                class="tag-list"
-                role="list"
-                aria-label="Mushroom Characteristic"
-              >
-                <li data-edible="edible">
-                  <span class="visually-hidden"> This mushroom is </span>
-                  edible
-                </li>
-                <li data-season="fall">
-                  <span class="visually-hidden">
-                    Best season to harvest this mushroom is
-                  </span>
-                  fall
-                </li>
-              </ul>
-              <p>Large, feathery clusters with overlapping gray-brown caps</p>
-              <div class="card__note">
-                <strong>Important notes: </strong>
-                Also known as Hen of the Woods - no toxic look-alikes
+              <div class="card">
+                <h3 class="card__title">Shaggy Mane</h3>
+                <ul
+                  class="tag-list"
+                  role="list"
+                  aria-label="Mushroom Characteristic"
+                >
+                  <li data-edible="edible">
+                    <span class="visually-hidden"> This mushroom is </span>
+                    edible
+                  </li>
+                  <li data-season="fall">
+                    <span class="visually-hidden">
+                      Best season to harvest this mushroom is
+                    </span>
+                    fall
+                  </li>
+                </ul>
+                <p>Tall white mushroom with shaggy scales</p>
+                <div class="card__note">
+                  <strong>Important notes: </strong>
+                  Must be harvested and eaten quickly
+                </div>
               </div>
-            </div>
 
-            <div class="card">
-              <h3 class="card__title">False Morel</h3>
-              <ul
-                class="tag-list"
-                role="list"
-                aria-label="Mushroom Characteristic"
-              >
-                <li data-edible="toxic">
-                  <span class="visually-hidden"> This mushroom is </span>
-                  toxic
-                </li>
-                <li data-season="spring">
-                  <span class="visually-hidden">
-                    Best season to harvest this mushroom is
-                  </span>
-                  spring
-                </li>
-              </ul>
-              <p>Brain-like, reddish-brown cap with irregular shape</p>
-              <div class="card__note">
-                <strong>Important notes: </strong>
-                Highly toxic - often confused with true morels
+              <div class="card">
+                <h3 class="card__title">Maitake</h3>
+                <ul
+                  class="tag-list"
+                  role="list"
+                  aria-label="Mushroom Characteristic"
+                >
+                  <li data-edible="edible">
+                    <span class="visually-hidden"> This mushroom is </span>
+                    edible
+                  </li>
+                  <li data-season="fall">
+                    <span class="visually-hidden">
+                      Best season to harvest this mushroom is
+                    </span>
+                    fall
+                  </li>
+                </ul>
+                <p>Large, feathery clusters with overlapping gray-brown caps</p>
+                <div class="card__note">
+                  <strong>Important notes: </strong>
+                  Also known as Hen of the Woods - no toxic look-alikes
+                </div>
               </div>
-            </div>
 
-            <div class="card">
-              <h3 class="card__title">Matsutake</h3>
-              <ul
-                class="tag-list"
-                role="list"
-                aria-label="Mushroom Characteristic"
-              >
-                <li data-edible="edible">
-                  <span class="visually-hidden"> This mushroom is </span>
-                  edible
-                </li>
-                <li data-season="fall">
-                  <span class="visually-hidden">
-                    Best season to harvest this mushroom is
-                  </span>
-                  fall
-                </li>
-              </ul>
-              <p>White to brown cap with thick stem and distinct spicy aroma</p>
-              <div class="card__note">
-                <strong>Important notes: </strong>
-                Verify identification - has toxic look-alikes
+              <div class="card">
+                <h3 class="card__title">False Morel</h3>
+                <ul
+                  class="tag-list"
+                  role="list"
+                  aria-label="Mushroom Characteristic"
+                >
+                  <li data-edible="toxic">
+                    <span class="visually-hidden"> This mushroom is </span>
+                    toxic
+                  </li>
+                  <li data-season="spring">
+                    <span class="visually-hidden">
+                      Best season to harvest this mushroom is
+                    </span>
+                    spring
+                  </li>
+                </ul>
+                <p>Brain-like, reddish-brown cap with irregular shape</p>
+                <div class="card__note">
+                  <strong>Important notes: </strong>
+                  Highly toxic - often confused with true morels
+                </div>
+              </div>
+
+              <div class="card">
+                <h3 class="card__title">Matsutake</h3>
+                <ul
+                  class="tag-list"
+                  role="list"
+                  aria-label="Mushroom Characteristic"
+                >
+                  <li data-edible="edible">
+                    <span class="visually-hidden"> This mushroom is </span>
+                    edible
+                  </li>
+                  <li data-season="fall">
+                    <span class="visually-hidden">
+                      Best season to harvest this mushroom is
+                    </span>
+                    fall
+                  </li>
+                </ul>
+                <p>
+                  White to brown cap with thick stem and distinct spicy aroma
+                </p>
+                <div class="card__note">
+                  <strong>Important notes: </strong>
+                  Verify identification - has toxic look-alikes
+                </div>
               </div>
             </div>
           </div>

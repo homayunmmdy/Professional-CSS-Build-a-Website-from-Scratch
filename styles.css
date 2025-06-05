@@ -188,6 +188,12 @@
 }
 
 @layer layout {
+  .flex-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
   .flow > * + * {
     margin-top: var(--flow-space, 1em);
   }
@@ -411,7 +417,7 @@
   .card__note {
     margin-block-start: auto;
     background-color: var(--background-extra-light);
-    padding: .75rem;
+    padding: 0.75rem;
     border-radius: var(--border-radius-2);
   }
 
@@ -462,6 +468,14 @@
   .button:focus-visible {
     color: var(--text-high-contrast);
     background-color: var(--background-accent-light);
+  }
+
+  select {
+    padding: 0.5rem 1rem;
+    background-color: var(--background-accent-main);
+    border: 0;
+    border-radius: var(--border-radius-2);
+    color: var(--text-high-contrast);
   }
 }
 
