@@ -6,8 +6,17 @@ navToggle.addEventListener("click", () => {
 
   if (navOpened === "false") {
     navToggle.setAttribute("aria-expanded", "true");
-    console.log('test')
   } else {
     navToggle.setAttribute("aria-expanded", "false");
   }
 });
+
+const resizeObserver = new ResizeObserver(() => {
+  document.body.classList.add("resizing");
+
+  requestAnimationFrame(() => {
+    document.body.classList.remove("resizing");
+  });
+});
+
+resizeObserver.observe(document.body);
