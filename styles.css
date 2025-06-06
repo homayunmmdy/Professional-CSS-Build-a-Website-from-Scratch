@@ -214,12 +214,12 @@
   }
 
   .grid-auto-fill {
-    --auto-fit-main-col-size: 250px;
+    --auto-fit-min-col-size: 250px;
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(
       auto-fill,
-      minmax(min(var(--auto-fit-main-col-size)), 1fr)
+      minmax(min(var(--auto-fit-min-col-size), 100%), 1fr)
     );
   }
 
@@ -290,6 +290,9 @@
   }
   .site-header {
     padding-block: 1rem;
+
+    overflow-x: clip;
+    position: relative;
   }
   .site-header__inner {
     display: flex;
@@ -326,8 +329,10 @@
       & {
         display: none;
         opacity: 0;
-        transition: opacity 1s,display 1s;
+        transition: opacity 1s, display 1s, translate 1s;
         transition-behavior: allow-discrete;
+        translate: 100% 0;
+
         position: absolute;
         z-index: 10;
         top: 0;
@@ -361,9 +366,11 @@
     [aria-expanded="true"] ~ .primary-navigation {
       display: block;
       opacity: 1;
+      translate: 0 0;
 
       @starting-style {
         opacity: 0;
+         translate: 0 -100%;
       }
     }
   }
