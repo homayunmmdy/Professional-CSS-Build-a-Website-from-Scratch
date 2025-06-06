@@ -87,9 +87,16 @@
     --clr-gray-100: hsl(0, 2%, 79%);
     --clr-brand-400: hsl(25, 88%, 75%);
     --clr-brand-500: hsl(25, 88%, 66%);
+    --clr-green-300: hsl(143, 19%, 69%);
     --clr-green-400: hsl(143, 19%, 49%);
     --clr-green-500: hsl(143, 38%, 37%);
     --clr-green-600: hsl(145, 29%, 19%);
+
+    --clr-brown-100: hsl(10, 5%, 90%);
+    --clr-brown-200: hsl(9, 7%, 85%);
+    --clr-brown-300: hsl(9, 8%, 75%);
+    --clr-brown-400: hsl(0, 6%, 60%);
+
     --clr-brown-500: hsl(10, 5%, 25%);
     --clr-brown-600: hsl(9, 7%, 21%);
     --clr-brown-700: hsl(9, 8%, 16%);
@@ -152,11 +159,24 @@
     --border-radius-1: 0.25rem;
     --border-radius-2: 0.5rem;
     --border-radius-3: 0.75rem;
+
+    @media (prefers-color-scheme: light) {
+      --text-main: var(--clr-brown-700);
+      --text-high-contrast: var(--clr-brown-900);
+
+      --background-accent-dark: var(--clr-green-300);
+      --background-extra-light: var(--clr-brown-100);
+      --background-light: var(--clr-brown-200);
+      --background-main: var(--clr-brown-300);
+      --background-dark: var(--clr-brown-400);
+      --background-extra-dark: var(--clr-brown-500);
+    }
   }
 
   html {
     font-family: var(--ff-body);
     line-height: 1.6;
+    scroll-padding: 3rem;
   }
 
   @media (prefers-reduced-motion: no-preference) {
@@ -205,7 +225,7 @@
   }
 
   .flow > * + * {
-    margin-top: var(--flow-space, 1em);
+    margin-top: var(--flow-spacer, 1em);
   }
 
   .grid-flow {
@@ -249,12 +269,13 @@
 
     @media (width > 760px) {
       --padding: 8rem;
-    }
 
     &[data-padding="compact"] {
       --padding: 4.5rem;
     }
   }
+  }
+
   .wrapper {
     --wrapper-max-width: 1130px;
 
@@ -279,12 +300,13 @@
     clip-path: inset(50%);
     height: 1px;
     overflow: hidden;
+    position: absolute;
     white-space: nowrap;
     width: 1px;
   }
   .skip-to-main {
     position: absolute;
-    background-color: var(--background-accent-main);
+    background: var(--background-accent-main);
     padding: 1rem;
     border-radius: var(--border-radius-2);
   }
@@ -350,6 +372,20 @@
         flex-direction: column;
       }
 
+      li {
+        --delay: 1s;
+        translate: 50%;
+        transition: translate 1s var(--delay), opacity 1s var(--delay);
+      }
+
+      li:nth-child(2) {
+        --delay: 1.25s;
+      }
+
+      li:nth-child(3) {
+        --delay: 1.5s;
+      }
+
       li + li {
         margin-block-start: 1.5rem;
         padding-block-start: 1.5rem;
@@ -372,6 +408,16 @@
         opacity: 0;
          translate: 0 -100%;
       }
+
+      li {
+        translate: 0 0;
+        opacity: 1;
+
+        @starting-style {
+          opacity: 0;
+          translate: 50% 0;
+        }
+      }
     }
   }
 
@@ -388,7 +434,7 @@
 
     a:hover,
     a:focus-visible {
-      color: var(--text-high-contrast);
+      color: var(--text-brand-light);
     }
   }
 
@@ -401,10 +447,22 @@
   .hero {
     text-align: center;
     font-size: var(--font-size-md);
-    color: var(--text-high-contrast);
+    color: var(--clr-brown-100);
+    /* color-scheme: dark; */
+    color-scheme: only light;
     background-image: url(/assets/hero.webp);
     background-size: cover;
     background-position: center;
+
+    animation: fade-out forwards;
+    animation-timeline: view();
+    animation-range-start: exit;
+  }
+
+  .card {
+    animation: fade-in both;
+    animation-timeline: view();
+    /* animation-range-start: exit; */
   }
 
   .hero__title {
@@ -419,7 +477,7 @@
   .mushroom-guide {
     --card-title-font-size: var(--font-size-lg);
     --card-title-color: var(--text-high-contrast);
-    --card-gap: 0.5rem;
+    --card-gap: 0.75rem;
   }
 
   .faq-benito {
@@ -490,10 +548,10 @@
     gap: var(--card-gap, 1rem);
     padding: 1rem;
     background-color: var(--background-light);
-    border-radius: var(--border-radius-2);
+    border-radius: var(--border-radius-3);
 
     img {
-      border-radius: var(--border-radius-3);
+    border-radius: var(--border-radius-2);
     }
   }
 
@@ -571,6 +629,12 @@
   [hidden] {
     display: none;
   }
+
+  .resizing * {
+    transition: none;
+    animation-play-state: paused;
+  }
+
   .visually-hidden {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
@@ -625,5 +689,14 @@
   }
   .font-size-lg {
     font-size: var(--font-size-lg);
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
