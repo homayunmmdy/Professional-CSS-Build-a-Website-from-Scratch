@@ -44,3 +44,10 @@ function filterCards() {
     }
   });
 }
+
+function enableFiltering() {
+  seasonalFilter.removeAttribute("hidden");
+  edibleFilter.removeAttribute("hidden");
+}
+
+enableFiltering();
