@@ -214,7 +214,7 @@
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(
-      auto-fit,
+      auto-fill,
       minmax(min(var(--auto-fit-main-col-size)), 1fr)
     );
   }
